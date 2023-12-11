@@ -26,6 +26,13 @@ class Controller{
         }
     }
 
+    borrarTodo(textarea, contenedor){
+        textarea.value = ""
+        while (contenedor.firstChild) {
+            contenedor.removeChild(contenedor.firstChild);
+        }
+    }
+
 }
 
 const controller = new Controller()
