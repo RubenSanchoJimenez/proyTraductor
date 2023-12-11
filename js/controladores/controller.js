@@ -1,6 +1,16 @@
-/* controlador general */
+/* Controlador general */
 
 import { VistaInicial } from "../vistas/vistaInicial.js";
+import { VistaFinal } from "../vistas/vistaFinal.js";
+import { Model } from "../modelos/model.js";
 
-const vistaInicial = new VistaInicial()
-vistaInicial.prueba()
+class Controller{
+
+    constructor(){
+        const vistaInicial = new VistaInicial()
+        const vistaFinal = new VistaFinal()
+        const model = new Model()
+        
+    }
+
+}
