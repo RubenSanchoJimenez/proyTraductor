@@ -16,6 +16,7 @@ class Controller{
     clonar(textarea, contenedor) {
         const original = textarea
         const clon = original.cloneNode(true)
+        clon.value = ""
         contenedor.appendChild(clon)
     }
 
