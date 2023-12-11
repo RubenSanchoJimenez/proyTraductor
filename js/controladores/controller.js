@@ -16,7 +16,14 @@ class Controller{
     clonar(textarea, contenedor) {
         const original = textarea
         const clon = original.cloneNode(true)
-        contenedor.appendChild(clon);
+        contenedor.appendChild(clon)
+    }
+
+    borrarClon(contenedor){
+        const ultimoElemento = contenedor.lastChild
+        if (ultimoElemento){
+            contenedor.removeChild(ultimoElemento)
+        }
     }
 
 }

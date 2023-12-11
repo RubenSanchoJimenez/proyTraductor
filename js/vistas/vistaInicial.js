@@ -10,14 +10,14 @@ export class VistaInicial {
         this.select = this.vistaInicial.getElementsByTagName('select')[0]
         this.textarea = this.vistaInicial.getElementsByTagName('textarea')[0]
         this.buttonClone = this.vistaInicial.querySelector('#buttonClone')
+        this.buttonDeleteClone = this.vistaInicial.querySelector('#buttonDeleteClone')
         this.buttonTranslate = this.vistaInicial.querySelector('#translate')
         this.buttonDelete = this.vistaInicial.querySelector('#delete')
         this.contenedorClonados = this.vistaInicial.querySelector('#contenedorClonados')
 
         // Eventos
         this.buttonClone.addEventListener('click', () => {this.controller.clonar(this.textarea, this.contenedorClonados)})
-        this.buttonTranslate.addEventListener('click', controller.clonar)
-        this.buttonDelete.addEventListener('click', controller.clonar)
+        this.buttonDeleteClone.addEventListener('click', () => {this.controller.borrarClon(this.contenedorClonados)})
     }
 
 }
