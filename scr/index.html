@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Traductor</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script defer type="module" src="js/controladores/controller.js"></script>
+    </head>
+    <body>
+        <aside id="vistaInicial">
+            <main>
+                <h1>Traductor en tiempo real</h1>
+                <h4>Selecciona el idioma a traducir</h4>
+                <select>
+                    <option>Spanish</option>
+                    <option>English</option>
+                    <option>Portugues</option>
+                </select>
+                <h4>Introduce el texto a traducir</h4>
+                <textarea placeholder="Introduce el texto"></textarea>
+                <button>Enviar</button>
+            </main>
+        </aside>
+        <aside id="vistaFinal">
+            <main>
+                <h1>Traducción</h1>
+                <textarea></textarea>
+                <button>Volver</button>
+            </main>
+        </aside>
+    </body>
+</html>
