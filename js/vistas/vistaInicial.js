@@ -12,9 +12,10 @@ export class VistaInicial {
         this.buttonClone = this.vistaInicial.querySelector('#buttonClone')
         this.buttonTranslate = this.vistaInicial.querySelector('#translate')
         this.buttonDelete = this.vistaInicial.querySelector('#delete')
+        this.contenedorClonados = this.vistaInicial.querySelector('#contenedorClonados')
 
         // Eventos
-        this.buttonClone.addEventListener('click', () => {this.controller.clonar(this.textarea)})
+        this.buttonClone.addEventListener('click', () => {this.controller.clonar(this.textarea, this.contenedorClonados)})
         this.buttonTranslate.addEventListener('click', controller.clonar)
         this.buttonDelete.addEventListener('click', controller.clonar)
     }

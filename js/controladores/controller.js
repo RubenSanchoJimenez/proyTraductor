@@ -13,11 +13,10 @@ class Controller{
         const model = new Model(this)
     }
 
-    clonar(textarea) {
-        console.log("Evento capturado")
+    clonar(textarea, contenedor) {
         const original = textarea
         const clon = original.cloneNode(true)
-        textarea.parentNode.insertBefore(clon, textarea.nextSibling);
+        contenedor.appendChild(clon);
     }
 
 }
