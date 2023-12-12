@@ -16,9 +16,10 @@ export class VistaInicial {
         this.contenedorClonados = this.vistaInicial.querySelector('#contenedorClonados')
 
         // Eventos
-        this.buttonClone.addEventListener('click', () => {this.controller.clonar(this.textarea, this.contenedorClonados)})
-        this.buttonDeleteClone.addEventListener('click', () => {this.controller.borrarClon(this.contenedorClonados)})
-        this.buttonDelete.addEventListener('click', () => {this.controller.borrarTodo(this.textarea, this.contenedorClonados)})
+        this.buttonClone.addEventListener('click', () => {this.controller.clonar()})
+        this.buttonDeleteClone.addEventListener('click', () => {this.controller.borrarClon()})
+        this.buttonDelete.addEventListener('click', () => {this.controller.borrarTodo()})
+        this.buttonTranslate.addEventListener('click', () => {this.controller.traducir()})
     }
 
 }

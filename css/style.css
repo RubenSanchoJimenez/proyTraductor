@@ -56,6 +56,18 @@ textarea{
 }
 
 #vistaFinal textarea{
-    height: 40vh;
+    width: 48%;
+    height: 15vh;
     resize: none;
+}
+
+#vistaFinal div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contenedorResultados div{
+    margin: 2vh 0px;
 }
