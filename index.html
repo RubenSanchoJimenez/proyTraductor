@@ -9,30 +9,34 @@
         <script src="https://kit.fontawesome.com/a0185357ca.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <aside id="vistaInicial">
-            <main>
-                <h1>Traductor en tiempo real</h1>
-                <h4>Selecciona el idioma a traducir</h4>
-                <select>
-                    <option>Spanish</option>
-                    <option>English</option>
-                    <option>Portugues</option>
-                </select>
-                <h4>Introduce el texto a traducir</h4>
-                <textarea placeholder="Introduce el texto"></textarea>
-                <div id="contenedorClonados"></div>
-                <button id="buttonClone"><i class="fa-solid fa-plus fa-beat-fade"></i></button>
-                <button id="buttonDeleteClone"><i class="fa-solid fa-minus fa-beat-fade"></i></button>
-                <p><button id="translate">Traducir</button> <button id="delete"><i class="fa-solid fa-trash"></i></button></p>
-            </main>
-        </aside>
-        <aside id="vistaFinal">
-            <main>
-                <h1>Traducción</h1>
-                <div id="resultadoOriginal"><textarea readonly></textarea><textarea readonly></textarea></div>
-                <article id="contenedorResultados"></article>
-                <p><button id="botonVolver">Volver</button></p>
-            </main>
-        </aside>
+        <div id="vistaInicial">
+            <aside>
+                <main>
+                    <h1>Traductor en tiempo real</h1>
+                    <h4>Selecciona el idioma a traducir</h4>
+                    <select>
+                        <option>Spanish</option>
+                        <option>English</option>
+                        <option>Portugues</option>
+                    </select>
+                    <h4>Introduce el texto a traducir</h4>
+                    <textarea placeholder="Introduce el texto"></textarea>
+                    <div id="contenedorClonados"></div>
+                    <button id="buttonClone"><i class="fa-solid fa-plus fa-beat-fade"></i></button>
+                    <button id="buttonDeleteClone"><i class="fa-solid fa-minus fa-beat-fade"></i></button>
+                    <p><button id="translate">Traducir</button> <button id="delete"><i class="fa-solid fa-trash"></i></button></p>
+                </main>
+            </aside>
+        </div>
+        <div id="vistaFinal">
+            <aside>
+                <main>
+                    <h1>Traducción</h1>
+                    <div id="resultadoOriginal"><textarea readonly></textarea><textarea readonly></textarea></div>
+                    <article id="contenedorResultados"></article>
+                    <p><button id="botonVolver">Volver</button></p>
+                </main>
+            </aside>
+        </div>
     </body>
 </html>

@@ -53,6 +53,7 @@ textarea{
 
 #vistaFinal{
     background-color: rgb(210, 140, 140);
+    display: none;
 }
 
 #vistaFinal textarea{

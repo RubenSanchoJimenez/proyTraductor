@@ -14,47 +14,30 @@ class Controller{
     }
 
     clonar(){
-        let original = this.objVistaInicial.textarea
-        let clon = original.cloneNode(true)
-        clon.value = ""
-        this.objVistaInicial.contenedorClonados.appendChild(clon)
+        this.model.modClonar(this.objVistaInicial, this.objVistaFinal)
 
-        original = this.objVistaFinal.resultadoOriginal
-        clon = original.cloneNode(true)
-        this.objVistaFinal.contenedorResultados.appendChild(clon)
     }
 
     borrarClon(){
-        let ultimoElemento = this.objVistaInicial.contenedorClonados.lastChild
-        if (ultimoElemento){
-            this.objVistaInicial.contenedorClonados.removeChild(ultimoElemento)
-        }
+        this.model.modBorrarClon(this.objVistaInicial, this.objVistaFinal)
 
-        ultimoElemento = this.objVistaFinal.contenedorResultados.lastChild
-        if (ultimoElemento){
-            this.objVistaFinal.contenedorResultados.removeChild(ultimoElemento)
-        }
     }
 
     borrarTodo(){
-        this.objVistaInicial.textarea.value = ""
-        while (this.objVistaInicial.contenedorClonados.firstChild) {
-            this.objVistaInicial.contenedorClonados.removeChild(this.objVistaInicial.contenedorClonados.firstChild)
-        }
+        this.model.modBorrarTodo(this.objVistaInicial, this.objVistaFinal)
 
-        while (this.objVistaFinal.contenedorResultados.firstChild) {
-            this.objVistaFinal.contenedorResultados.removeChild(this.objVistaFinal.contenedorResultados.firstChild)
-        }
     }
 
-    traducir(){
-        
-    }
+    traducir() { 
+        this.model.modCambiarVista(this.objVistaFinal.vistaFinal, this.objVistaInicial.vistaInicial)
 
+    }
+    
     volver(){
+        this.model.modCambiarVista(this.objVistaInicial.vistaInicial, this.objVistaFinal.vistaFinal)
 
     }
-
+    
 }
 
 const controller = new Controller()
