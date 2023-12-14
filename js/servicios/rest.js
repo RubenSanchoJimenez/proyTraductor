@@ -8,7 +8,7 @@
 **/
 
 export class Rest {
-    static #URL = 'php/api/index.php'
+    static #URL = 'js/servicios'
     static #autorizacion = null
   
     /**
@@ -136,7 +136,7 @@ export class Rest {
         })
         url = url.substring(0, url.length - 1)
       }
-      url = encodeURI(url.replace('//', '/null/')) // aseguramos los parámetros nulos.
+      url = encodeURI(url) // aseguramos los parámetros nulos.
       return url
     }
   }
